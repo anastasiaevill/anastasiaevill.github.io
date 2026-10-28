@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D-презентация проекта</title>
+  <!-- Замените на официально рекомендованный стабильный CDN -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    model-viewer {
+      width: 100%;
+      height: 500px;
+      background: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>3D-презентация проекта</h1>
+    <!-- Убедитесь, что Tulpan.glb находится в той же директории, что и HTML -->
+    <model-viewer
+      src="./Tulpan.glb"
+      ios-src="./Tulpan 1.usdz"
+      alt="Описание трехмерной модели"
+      camera-controls
+      ar>
+    </model-viewer>
+  </main>
+</body>
+</html>
